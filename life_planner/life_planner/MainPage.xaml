@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="life_planner.MainPage">
+
+    <StackLayout Background="#000">
+        <Frame BackgroundColor="#000" Padding="10" CornerRadius="0">
+
+            <Label 
+                    Text="m y  p l a n n e r" 
+                    HorizontalTextAlignment="Center" 
+                    TextColor="#CC0033" FontSize="20" 
+                    TextTransform="Uppercase"  
+                    FontFamily="Times New Roman"/>
+
+        </Frame>
+        
+        <Label 
+            Text="Select Dates" 
+            TextColor="#fff" 
+            HorizontalTextAlignment="Center" 
+            FontSize="14" Padding="30,20,30,0"/>
+
+        <DatePicker 
+            x:Name="mojadata"
+            BackgroundColor="#000" 
+            TextColor="#cc0033" 
+            HorizontalOptions="Center"/>
+
+        <Label 
+            Text="Select Times" 
+            TextColor="#fff" 
+            HorizontalTextAlignment="Center" 
+            FontSize="14" Padding="30,0,30,0"/>
+        <TimePicker 
+            x:Name="mojczas"
+            TextColor="#c03"
+            HorizontalOptions="Center"/>
+
+        <Entry 
+            x:Name="mojanotatka" 
+            Placeholder="Tu jest miejsce na notatkę" 
+            PlaceholderColor="#fff" 
+            TextColor="#fff" 
+            Margin="0,0,0,300"/>
+
+        <Button 
+            Text="Zatwierdź" 
+            TextColor="#fff" 
+            BackgroundColor="#cc0033" 
+            BorderWidth="1" 
+            BorderColor="#fff" 
+            FontAttributes="Bold"
+            Clicked="Dodaj"
+            CornerRadius="15"
+           />
+
+        <Button 
+            Text="Przejdz do listy notatek" 
+            TextColor="#fff" 
+            BackgroundColor="#cc0033" 
+            BorderWidth="1" 
+            BorderColor="#fff" 
+            FontAttributes="Bold"
+            CornerRadius="15"
+            Clicked="Lista"/>
+
+        <Button 
+            Text="Moje dodatki" 
+            TextColor="#fff" 
+            BackgroundColor="#cc0033" 
+            BorderWidth="1" 
+            BorderColor="#fff" 
+            FontAttributes="Bold"
+            CornerRadius="15"
+            Clicked="Dodatki"/>
+    </StackLayout>
+</ContentPage>

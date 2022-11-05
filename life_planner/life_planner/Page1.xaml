@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="life_planner.Page1">
+    
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Frame BackgroundColor="#000" Padding="10" CornerRadius="0">
+
+                <Label 
+                Text="L i s t a    n o t a t e k"
+                VerticalOptions="Center" 
+                HorizontalOptions="CenterAndExpand" 
+                TextColor="#fff"
+                TextDecorations="Underline"
+                TextTransform="Uppercase"
+                Margin="0,15,0,15"
+                FontAttributes="Bold"/>
+
+            </Frame>
+
+            <CheckBox>
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal">
+                            <VisualState.Setters>
+                                <Setter Property="Color"
+                            Value="Red" />
+                            </VisualState.Setters>
+                        </VisualState>
+
+                        <VisualState x:Name="IsChecked">
+                            <VisualState.Setters>
+                                <Setter Property="Color"
+                            Value="black" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+            </CheckBox>
+
+            <CheckBox>
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal">
+                            <VisualState.Setters>
+                                <Setter Property="Color"
+                            Value="Red" />
+                            </VisualState.Setters>
+                        </VisualState>
+
+                        <VisualState x:Name="IsChecked">
+                            <VisualState.Setters>
+                                <Setter Property="Color"
+                            Value="black" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+            </CheckBox>
+
+            <CheckBox>
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal">
+                            <VisualState.Setters>
+                                <Setter Property="Color"
+                            Value="Red" />
+                            </VisualState.Setters>
+                        </VisualState>
+
+                        <VisualState x:Name="IsChecked">
+                            <VisualState.Setters>
+                                <Setter Property="Color"
+                            Value="black" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+            </CheckBox>
+
+            <CheckBox>
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal">
+                            <VisualState.Setters>
+                                <Setter Property="Color"
+                            Value="Red" />
+                            </VisualState.Setters>
+                        </VisualState>
+
+                        <VisualState x:Name="IsChecked">
+                            <VisualState.Setters>
+                                <Setter Property="Color"
+                            Value="black" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+            </CheckBox>
+
+            <CheckBox>
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal">
+                            <VisualState.Setters>
+                                <Setter Property="Color"
+                            Value="Red" />
+                            </VisualState.Setters>
+                        </VisualState>
+
+                        <VisualState x:Name="IsChecked">
+                            <VisualState.Setters>
+                                <Setter Property="Color"
+                            Value="black" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+            </CheckBox>
+
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button 
+                    Text="Save"
+                    TextColor="#fff" 
+                    BackgroundColor="#000" />
+                <Button 
+                    Grid.Column="1"
+                    Text="Delete"
+                    TextColor="#fff" 
+                    BackgroundColor="#000" />
+                <Button 
+                    Grid.Column="2"
+                    Text="Open"
+                    TextColor="#fff" 
+                    BackgroundColor="#000" />
+            </Grid>
+            <Button 
+            Margin="0,0,0,0"
+            Text="Powróć" 
+            TextColor="#fff" 
+            BackgroundColor="#cc0033" 
+            BorderWidth="1" 
+            BorderColor="#cc0033" 
+            FontAttributes="Bold"
+            Clicked="Powrot"
+            CornerRadius="15"
+           />
+        </StackLayout>
+       
+    </ContentPage.Content>
+
+</ContentPage>

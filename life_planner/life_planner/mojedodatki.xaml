@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="life_planner.mojedodatki">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Frame BackgroundColor="#000" Padding="10" CornerRadius="0">
+
+                <Label 
+                Text="M o j e   d o d a t k i"
+                VerticalOptions="Center" 
+                HorizontalOptions="CenterAndExpand" 
+                TextColor="#fff"
+                TextDecorations="Underline"
+                TextTransform="Uppercase"
+                Margin="0,15,0,15"
+                FontAttributes="Bold"/>
+
+            </Frame>
+
+            <Label 
+                Text=" P L A N E R  W Y C I E C Z E K"
+                Padding="0,10,10,0"/>
+
+            <Label 
+                Text=" Z A K U P Y"
+                Padding="0,10,10,0"/>
+
+            <Label 
+                Text=" M E S S A N G E"
+                Padding="0,10,10,0"/>
+
+
+            <Button 
+            Margin="0,500,0,0"
+            Text="Powróć" 
+            TextColor="#fff" 
+            BackgroundColor="#000" 
+            BorderWidth="1" 
+            BorderColor="#cc0033" 
+            FontAttributes="Bold"
+            Clicked="Powrot"
+            CornerRadius="15"
+           />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
