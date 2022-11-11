@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "199677967562",
+    "project_id": "pushnotification-d677b",
+    "storage_bucket": "pushnotification-d677b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199677967562:android:637e5bed74a3e53276c833",
+        "android_client_info": {
+          "package_name": "com.lifeplanner.notifications"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "199677967562-pdt9oedfil6m9o2eulqr6lbmrkqmi1gp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7yuYZKuoEYOwus4YI25k7WoccQ7zZBcU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "199677967562-pdt9oedfil6m9o2eulqr6lbmrkqmi1gp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
