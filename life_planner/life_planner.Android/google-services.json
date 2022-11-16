@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "895878847332",
+    "project_id": "powiadomienia-aad69",
+    "storage_bucket": "powiadomienia-aad69.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895878847332:android:aa78dab2546e7a62493871",
+        "android_client_info": {
+          "package_name": "notifications.Push_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "895878847332-f4mcc4mlln5k0nb24da0l3fdmgdejn4u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZBBmL11-VpXypFAJVI0sb029O-Hz5Nvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "895878847332-f4mcc4mlln5k0nb24da0l3fdmgdejn4u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
