@@ -3,7 +3,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="life_planner.Page1">
-    
+
     <ContentPage.Content>
         <StackLayout>
 
@@ -21,106 +21,15 @@
 
             </Frame>
 
-            <CheckBox>
-                <VisualStateManager.VisualStateGroups>
-                    <VisualStateGroup x:Name="CommonStates">
-                        <VisualState x:Name="Normal">
-                            <VisualState.Setters>
-                                <Setter Property="Color"
-                            Value="Red" />
-                            </VisualState.Setters>
-                        </VisualState>
-
-                        <VisualState x:Name="IsChecked">
-                            <VisualState.Setters>
-                                <Setter Property="Color"
-                            Value="black" />
-                            </VisualState.Setters>
-                        </VisualState>
-                    </VisualStateGroup>
-                </VisualStateManager.VisualStateGroups>
-            </CheckBox>
-
-            <CheckBox>
-                <VisualStateManager.VisualStateGroups>
-                    <VisualStateGroup x:Name="CommonStates">
-                        <VisualState x:Name="Normal">
-                            <VisualState.Setters>
-                                <Setter Property="Color"
-                            Value="Red" />
-                            </VisualState.Setters>
-                        </VisualState>
-
-                        <VisualState x:Name="IsChecked">
-                            <VisualState.Setters>
-                                <Setter Property="Color"
-                            Value="black" />
-                            </VisualState.Setters>
-                        </VisualState>
-                    </VisualStateGroup>
-                </VisualStateManager.VisualStateGroups>
-            </CheckBox>
-
-            <CheckBox>
-                <VisualStateManager.VisualStateGroups>
-                    <VisualStateGroup x:Name="CommonStates">
-                        <VisualState x:Name="Normal">
-                            <VisualState.Setters>
-                                <Setter Property="Color"
-                            Value="Red" />
-                            </VisualState.Setters>
-                        </VisualState>
-
-                        <VisualState x:Name="IsChecked">
-                            <VisualState.Setters>
-                                <Setter Property="Color"
-                            Value="black" />
-                            </VisualState.Setters>
-                        </VisualState>
-                    </VisualStateGroup>
-                </VisualStateManager.VisualStateGroups>
-            </CheckBox>
-
-            <CheckBox>
-                <VisualStateManager.VisualStateGroups>
-                    <VisualStateGroup x:Name="CommonStates">
-                        <VisualState x:Name="Normal">
-                            <VisualState.Setters>
-                                <Setter Property="Color"
-                            Value="Red" />
-                            </VisualState.Setters>
-                        </VisualState>
-
-                        <VisualState x:Name="IsChecked">
-                            <VisualState.Setters>
-                                <Setter Property="Color"
-                            Value="black" />
-                            </VisualState.Setters>
-                        </VisualState>
-                    </VisualStateGroup>
-                </VisualStateManager.VisualStateGroups>
-            </CheckBox>
-
-            <CheckBox>
-                <VisualStateManager.VisualStateGroups>
-                    <VisualStateGroup x:Name="CommonStates">
-                        <VisualState x:Name="Normal">
-                            <VisualState.Setters>
-                                <Setter Property="Color"
-                            Value="Red" />
-                            </VisualState.Setters>
-                        </VisualState>
-
-                        <VisualState x:Name="IsChecked">
-                            <VisualState.Setters>
-                                <Setter Property="Color"
-                            Value="black" />
-                            </VisualState.Setters>
-                        </VisualState>
-                    </VisualStateGroup>
-                </VisualStateManager.VisualStateGroups>
-            </CheckBox>
-
+            <ListView x:Name= "MyListView" SeparatorColor="Red">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Date}"
+                                  Detail="{Binding Text}"
+                                  ></TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
 
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -154,7 +63,7 @@
             CornerRadius="15"
            />
         </StackLayout>
-       
+
     </ContentPage.Content>
 
 </ContentPage>

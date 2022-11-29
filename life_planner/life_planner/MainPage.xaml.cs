@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Essentials;
+using System.IO;
 
 namespace life_planner
 {
@@ -18,13 +19,16 @@ namespace life_planner
         public MainPage()
         {
             InitializeComponent();
+
         }
         private async void Dodaj(object sender, EventArgs e)
         {
+            var date = mojadata.Date.ToString("MM/dd/yyyy");
+            var time = mojczas.Time.ToString();
 
-           // await DisplayAlert("Alert", "Dodaną nową notatkę", "OK");
-          
-                await DisplayAlert("Information", "Dodaną nową notatkę", "OK");
+            DependencyService.Get<IFileService>().CreateFile($"{date};{time};{mojanotatka.Text}");
+            // await DisplayAlert("Alert", "Dodaną nową notatkę", "OK");
+            await DisplayAlert("Information", "Dodaną nową notatkę", "OK");
         }
         private async void Lista(object sender, EventArgs e)
         {
