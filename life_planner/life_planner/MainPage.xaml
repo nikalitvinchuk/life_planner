@@ -19,7 +19,7 @@
             Text="Select Dates" 
             TextColor="#fff" 
             HorizontalTextAlignment="Center" 
-            FontSize="14" Padding="30,20,30,0"/>
+            FontSize="14" Padding="30,20,30,1"/>
 
         <DatePicker 
             x:Name="mojadata"
